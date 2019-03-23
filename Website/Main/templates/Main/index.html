@@ -1,0 +1,40 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'Main/vendor/bootstrap/css/bootstrap.css' %}">	
+
+    <link rel="stylesheet" href="{% static 'Main/css/style.css' %}">
+
+    <title>Main</title>
+  </head>
+  <body>
+    <div id="timer" class="container">
+      <div class="waktu" id="jam"></div>  
+    </div>
+    
+
+    <div id="surat" class="wrapper">
+      <div class="mail">
+        <div class="cover"></div>
+        <div class="letter"><h1>@</h1></div>
+      </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="{% static 'Main/vendor/bootstrap/jquery/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'Main/vendor/bootstrap/popper/popper.js' %}"></script>
+    <script type="text/javascript" src="{% static 'Main/vendor/bootstrap/js/bootstrap.js' %}"></script>
+    <script type="text/javascript" src="{% static 'Main/vendor/bootstrap/momen/moment.js' %}"></script>
+    <script type="text/javascript" src="{% static 'Main/js/script.js' %}"></script>
+  </body>
+</html>

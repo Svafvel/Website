@@ -1,0 +1,52 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.css' %}">	
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <title>Login</title>
+  </head>
+  <body>
+
+  	<div id="bola" class="load"></div>
+
+	<div id="login-page" class="login-page">
+	<div class="form">
+		<form method="POST" id="login-form" class="login-form" >
+			{% csrf_token %}
+			<input id="user" type="text" required placeholder="username" name="username" autofocus>
+			<input id="pas" type="password" required="True" placeholder="password" name="password">	
+			<button id="btn" onclick="Login()" type="submit">Login</button>	
+		</form>
+	</div>
+	</div>  
+
+
+<!-- 	<form method="POST">
+		{% csrf_token %}
+		<table>
+			{{formLogin.as_table}}
+		</table>
+		<button type="submit">Login</button>
+	</form>
+ -->
+	
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="{% static 'vendor/bootstrap/jquery/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'vendor/bootstrap/popper/popper.js' %}"></script>
+    <script type="text/javascript" src="{% static 'vendor/bootstrap/js/bootstrap.js' %}"></script>
+    <script type="text/javascript" src="{% static 'vendor/bootstrap/momen/moment.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>
